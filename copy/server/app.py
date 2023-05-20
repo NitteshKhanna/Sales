@@ -18,7 +18,7 @@ con.close()
 
 @app.route("/register", methods=['POST'])
 def register():
-    # print(request.form)
+    print(request.form)
     #Recieving the new member details from front-end    
     user_name=request.form.get('user_name')
     password=request.form.get('password')
